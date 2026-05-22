@@ -42,8 +42,9 @@ git push -u origin main
 Source 选 **Deploy from a branch**，分支 `main`，目录 `/ (root)`。
 几分钟后网址为 `https://hu-zlatan.github.io/crop-disease-demo/`。
 
-更新内容后重新部署时，请把 `sw.js` 里的 `CACHE` 版本号递增（`crop-demo-v1` → `v2`），
-否则访客的 Service Worker 会继续使用旧缓存。
+Service Worker 对 HTML/JS/CSS 用 network-first（改动重新部署后会自动生效），
+只对大文件（模型 / 运行时 / 图片）用 cache-first。仅当**更换了这些大文件**时，
+才需把 `sw.js` 里的 `CACHE` 版本号递增（如 `crop-demo-v5` → `v6`）。
 
 ## 重新生成模型 / 画廊
 

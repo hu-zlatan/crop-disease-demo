@@ -75,19 +75,24 @@ function wireCamera() {
   $("btn-retry-cam").addEventListener("click", openCamera);
   const retake = () => showCamState("cam-live");
   $("btn-retake").addEventListener("click", retake);
-  $("btn-shot").addEventListener("click", retake);
+  const shot = $("btn-shot");
+  if (shot) shot.addEventListener("click", retake);
   $("btn-capture").addEventListener("click", capture);
 }
 
 // Rotates a dataset sample (with its true label) on the start screen.
 function startSampleRotation() {
+  const imgEl = $("sample-shot");
+  const enEl = $("sample-label-en");
+  const zhEl = $("sample-label-zh");
+  if (!imgEl || !enEl || !zhEl) return;
   const items = gallery.items;
   if (!items || !items.length) return;
   const pick = () => {
     const it = items[(Math.random() * items.length) | 0];
-    $("sample-shot").src = it.file;
-    $("sample-label-en").textContent = it.label_en;
-    $("sample-label-zh").textContent = it.label_zh;
+    imgEl.src = it.file;
+    enEl.textContent = it.label_en;
+    zhEl.textContent = it.label_zh;
   };
   pick();
   setInterval(pick, 15000);

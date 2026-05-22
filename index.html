@@ -38,6 +38,16 @@
         <button id="btn-start-cam" class="btn-primary">
           <b>Start Camera</b><small>启动摄像头</small>
         </button>
+        <div class="sample-card">
+          <img id="sample-shot" class="sample-img" alt="dataset example">
+          <div class="sample-label">
+            <b id="sample-label-en"></b><small id="sample-label-zh"></small>
+          </div>
+          <p class="sample-cap">
+            Dataset example · true label<br>
+            <span class="zh">数据集示例 · 真实分类标注（每 15 秒刷新）</span>
+          </p>
+        </div>
         <div class="qr-share">
           <img class="qr-img" src="assets/qr.svg" alt="QR code to open this page">
           <p class="qr-cap">
@@ -58,12 +68,17 @@
       </div>
 
       <div id="cam-result" class="cam-state hidden">
-        <div class="shot-wrap"><img id="shot" alt="captured image 拍摄的图像"></div>
+        <div class="result-top">
+          <button id="btn-shot" class="shot-thumb" title="Tap to retake 点击图片重拍" aria-label="Retake 重拍">
+            <img id="shot" alt="captured image 拍摄的图像">
+            <span class="shot-hint">↻</span>
+          </button>
+          <button id="btn-retake" class="btn-secondary">
+            <b>↻ Retake</b><small>重新拍照</small>
+          </button>
+        </div>
         <div id="result-list"></div>
         <p id="infer-time" class="infer-time"></p>
-        <button id="btn-retake" class="btn-secondary">
-          <b>↻ Retake</b><small>重新拍照</small>
-        </button>
       </div>
 
       <div id="cam-error" class="cam-state hidden">

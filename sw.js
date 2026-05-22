@@ -2,7 +2,7 @@
 // images on first fetch so repeat visits load instantly and work offline.
 // Bump CACHE when redeploying so clients pick up the new assets.
 
-const CACHE = "crop-demo-v3";
+const CACHE = "crop-demo-v4";
 
 self.addEventListener("install", () => self.skipWaiting());
 

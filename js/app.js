@@ -38,6 +38,7 @@ async function boot() {
   gallery.setClassifier(classifier);
   $("btn-refresh").addEventListener("click", () => gallery.refreshNow());
 
+  startSampleRotation();
   wireCamera();
   registerServiceWorker();
   $("loading").classList.add("hidden");
@@ -72,8 +73,24 @@ function showCamState(id) {
 function wireCamera() {
   $("btn-start-cam").addEventListener("click", openCamera);
   $("btn-retry-cam").addEventListener("click", openCamera);
-  $("btn-retake").addEventListener("click", () => showCamState("cam-live"));
+  const retake = () => showCamState("cam-live");
+  $("btn-retake").addEventListener("click", retake);
+  $("btn-shot").addEventListener("click", retake);
   $("btn-capture").addEventListener("click", capture);
+}
+
+// Rotates a dataset sample (with its true label) on the start screen.
+function startSampleRotation() {
+  const items = gallery.items;
+  if (!items || !items.length) return;
+  const pick = () => {
+    const it = items[(Math.random() * items.length) | 0];
+    $("sample-shot").src = it.file;
+    $("sample-label-en").textContent = it.label_en;
+    $("sample-label-zh").textContent = it.label_zh;
+  };
+  pick();
+  setInterval(pick, 15000);
 }
 
 async function openCamera() {

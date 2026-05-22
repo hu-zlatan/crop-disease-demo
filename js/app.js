@@ -59,6 +59,7 @@ function switchTab(tab) {
   }
   if (tab !== "camera") {
     stopCamera();
+    stopPreview();
     showCamState("cam-start");
   }
 }
@@ -74,7 +75,10 @@ function showCamState(id) {
 function wireCamera() {
   $("btn-start-cam").addEventListener("click", openCamera);
   $("btn-retry-cam").addEventListener("click", openCamera);
-  const retake = () => showCamState("cam-live");
+  const retake = () => {
+    showCamState("cam-live");
+    startPreview();
+  };
   $("btn-retake").addEventListener("click", retake);
   const shot = $("btn-shot");
   if (shot) shot.addEventListener("click", retake);
@@ -83,12 +87,41 @@ function wireCamera() {
   wirePinch();
 }
 
-// Digital zoom: scales the live preview; captureFrame() crops to match.
+// Digital zoom level; the preview draw loop and captureFrame() both read it.
 function applyZoom(z) {
   zoom = Math.min(4, Math.max(1, z || 1));
-  $("video").style.transform = "scale(" + zoom.toFixed(2) + ")";
   $("zoom").value = zoom;
   $("zoom-val").textContent = zoom.toFixed(1) + "×";
+}
+
+// The live preview is drawn to a <canvas> as a centre crop of the video frame
+// (digital zoom). Painting the pixels ourselves avoids unreliable CSS
+// transforms on <video> elements, notably on iOS Safari.
+let previewRaf = null;
+function startPreview() {
+  stopPreview();
+  const video = $("video");
+  const canvas = $("preview");
+  const ctx = canvas.getContext("2d");
+  const draw = () => {
+    const vw = video.videoWidth;
+    const vh = video.videoHeight;
+    if (vw && vh) {
+      const base = Math.min(vw, vh);
+      if (canvas.width !== base) {
+        canvas.width = base;
+        canvas.height = base;
+      }
+      const s = base / Math.max(1, zoom);
+      ctx.drawImage(video, (vw - s) / 2, (vh - s) / 2, s, s, 0, 0, base, base);
+    }
+    previewRaf = requestAnimationFrame(draw);
+  };
+  draw();
+}
+function stopPreview() {
+  if (previewRaf) cancelAnimationFrame(previewRaf);
+  previewRaf = null;
 }
 
 function wirePinch() {
@@ -144,6 +177,7 @@ async function openCamera() {
     await startCamera($("video"));
     showCamState("cam-live");
     applyZoom(zoom);
+    startPreview();
   } catch (e) {
     $("cam-error-msg").textContent = cameraErrorMessage(e);
     showCamState("cam-error");
@@ -155,6 +189,7 @@ async function capture() {
   busy = true;
   try {
     const frame = captureFrame($("video"), zoom);
+    stopPreview();
     $("shot").src = frame.toDataURL("image/jpeg", 0.9);
     showCamState("cam-result");
     renderResult(null);
@@ -177,14 +212,23 @@ function renderResult(res) {
     return;
   }
   if (res.ood) {
+    const g = res.top[0];
+    const gpct = (g.prob * 100).toFixed(1);
     list.innerHTML =
       '<div class="ood-warning">' +
       '<div class="ood-icon">🌱</div>' +
       '<p class="ood-title">No recognizable plant leaf</p>' +
       '<p class="ood-title-zh">未检测到可识别的植物叶片</p>' +
-      '<p class="ood-sub">This model recognizes only 38 plant-leaf classes. ' +
-      "Aim at a single leaf with a clean background, then retake.</p>" +
-      '<p class="ood-sub">本模型仅识别 38 类植物叶片。请对准单片叶子、背景干净后重拍。</p>' +
+      '<div class="ood-guess">' +
+      '<div class="ood-guess-tag">Most likely · 最可能（low confidence 置信度不足）</div>' +
+      '<div class="ood-guess-row">' +
+      '<span class="ood-guess-name">' + esc(g.cls.label_en) + "</span>" +
+      '<span class="ood-guess-pct">' + gpct + "%</span>" +
+      "</div>" +
+      '<div class="ood-guess-zh">' + esc(g.cls.label_zh) + "</div>" +
+      "</div>" +
+      '<p class="ood-sub">Tip: zoom in so the leaf fills the dashed box, then retake.</p>' +
+      '<p class="ood-sub">提示：放大图片，让叶片填满虚线取景框后重拍。</p>' +
       "</div>";
     $("infer-time").textContent = "⚡ On-device 本地推理 " + res.ms.toFixed(0) + " ms";
     return;

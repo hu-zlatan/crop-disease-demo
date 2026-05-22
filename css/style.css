@@ -120,6 +120,13 @@ main {
 }
 
 /* ---------- dataset sample on the start screen ---------- */
+.start-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
 .sample-card {
   margin-top: 2px;
   padding: 12px;
@@ -418,3 +425,53 @@ main {
 .ood-title { font-size: 19px; font-weight: 700; color: #e65100; margin-top: 6px; }
 .ood-title-zh { font-size: 16px; font-weight: 600; color: #e65100; margin-top: 2px; }
 .ood-sub { font-size: 14px; color: var(--muted); margin-top: 8px; line-height: 1.6; }
+
+/* ---------- desktop / wide screens ---------- */
+@media (min-width: 860px) {
+  header { padding: 18px 16px; }
+  header h1 { font-size: 28px; }
+  .subtitle { font-size: 15px; }
+  main { padding: 30px 24px 92px; }
+  .tab-panel { max-width: 1120px; margin: 0 auto; }
+
+  /* start screen */
+  .big-icon { font-size: 60px; margin-top: 2px; }
+  .hint { font-size: 19px; max-width: 640px; }
+  .hint-zh { font-size: 16px; }
+  .btn-primary, .btn-secondary { padding: 13px 46px; }
+  .btn-primary b, .btn-secondary b { font-size: 22px; }
+  .btn-primary small, .btn-secondary small { font-size: 15px; }
+
+  .start-cards {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 44px;
+    margin-top: 6px;
+  }
+  .sample-card, .qr-share { padding: 26px 32px; justify-content: center; }
+  .sample-img { width: 320px; height: 320px; }
+  .sample-label b { font-size: 22px; }
+  .sample-label small { font-size: 17px; }
+  .sample-cap { font-size: 14.5px; }
+  .qr-img { width: 320px; height: 320px; }
+  .qr-cap { font-size: 18px; max-width: 340px; }
+  .qr-cap .zh { font-size: 16px; }
+
+  /* camera live / result */
+  .video-wrap, .zoom-row, .result-top, #result-list { max-width: 480px; }
+  .shot-thumb { width: 150px; height: 150px; }
+  .zoom-hint { font-size: 14px; }
+  .result-name { font-size: 17px; }
+  .result-name .sub { font-size: 14px; }
+
+  /* gallery: 3 columns instead of 2 */
+  .gallery-grid { grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .gallery-title { font-size: 18px; }
+  .gallery-title .zh { font-size: 14px; }
+  .btn-refresh { font-size: 16px; padding: 9px 20px; }
+  .card-label b { font-size: 15.5px; }
+  .card-label small { font-size: 13.5px; }
+  .card-pred { font-size: 14px; }
+  .gallery-note { font-size: 15px; }
+}

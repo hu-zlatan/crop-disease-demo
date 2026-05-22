@@ -53,7 +53,10 @@ Source 选 **Deploy from a branch**，分支 `main`，目录 `/ (root)`。
 python scripts/export_onnx.py         # -> web/model/litecrop_color38.onnx + classes.json
 python scripts/build_demo_gallery.py  # -> web/assets/gallery/ + web/gallery.json
 python scripts/calibrate_ood.py       # -> web/model/ood.json (OOD 拒识阈值)
+python scripts/make_qr.py <url>       # -> web/assets/qr.svg (摄像头页二维码)
 ```
+
+`make_qr.py` 默认编码当前部署地址；若仓库 / 网址变了，传入新 URL 重新生成。
 
 `ood.json` 的 `minProb` / `maxEnergy` 可手动微调：调高 `minProb` 拒识更激进
 （更能挡住非植物图，但会误拒更多真实叶片），调低则相反。

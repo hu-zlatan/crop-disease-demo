@@ -32,8 +32,11 @@ export function stopCamera() {
 }
 
 // Returns a square canvas: a centre crop of the current video frame.
-export function captureFrame(video) {
-  const s = Math.min(video.videoWidth, video.videoHeight);
+// `zoom` (>=1) tightens the crop to the centre 1/zoom region, matching the
+// digital zoom shown in the live preview.
+export function captureFrame(video, zoom = 1) {
+  const base = Math.min(video.videoWidth, video.videoHeight);
+  const s = Math.max(1, Math.round(base / Math.max(1, zoom)));
   const c = document.createElement("canvas");
   c.width = s;
   c.height = s;

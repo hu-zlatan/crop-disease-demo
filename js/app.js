@@ -8,6 +8,7 @@ const $ = (id) => document.getElementById(id);
 const classifier = new Classifier();
 let gallery = null;
 let busy = false;
+let zoom = 1.5;
 
 boot();
 
@@ -78,6 +79,46 @@ function wireCamera() {
   const shot = $("btn-shot");
   if (shot) shot.addEventListener("click", retake);
   $("btn-capture").addEventListener("click", capture);
+  $("zoom").addEventListener("input", (e) => applyZoom(parseFloat(e.target.value)));
+  wirePinch();
+}
+
+// Digital zoom: scales the live preview; captureFrame() crops to match.
+function applyZoom(z) {
+  zoom = Math.min(4, Math.max(1, z || 1));
+  $("video").style.transform = "scale(" + zoom.toFixed(2) + ")";
+  $("zoom").value = zoom;
+  $("zoom-val").textContent = zoom.toFixed(1) + "×";
+}
+
+function wirePinch() {
+  const wrap = document.querySelector(".video-wrap");
+  if (!wrap) return;
+  const dist = (t) =>
+    Math.hypot(t[0].clientX - t[1].clientX, t[0].clientY - t[1].clientY);
+  let startDist = 0;
+  let startZoom = 1;
+  wrap.addEventListener(
+    "touchstart",
+    (e) => {
+      if (e.touches.length === 2) {
+        startDist = dist(e.touches);
+        startZoom = zoom;
+      }
+    },
+    { passive: true }
+  );
+  wrap.addEventListener(
+    "touchmove",
+    (e) => {
+      if (e.touches.length === 2 && startDist > 0) {
+        e.preventDefault();
+        applyZoom(startZoom * (dist(e.touches) / startDist));
+      }
+    },
+    { passive: false }
+  );
+  wrap.addEventListener("touchend", () => { startDist = 0; }, { passive: true });
 }
 
 // Rotates a dataset sample (with its true label) on the start screen.
@@ -102,6 +143,7 @@ async function openCamera() {
   try {
     await startCamera($("video"));
     showCamState("cam-live");
+    applyZoom(zoom);
   } catch (e) {
     $("cam-error-msg").textContent = cameraErrorMessage(e);
     showCamState("cam-error");
@@ -112,7 +154,7 @@ async function capture() {
   if (busy) return;
   busy = true;
   try {
-    const frame = captureFrame($("video"));
+    const frame = captureFrame($("video"), zoom);
     $("shot").src = frame.toDataURL("image/jpeg", 0.9);
     showCamState("cam-result");
     renderResult(null);

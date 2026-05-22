@@ -62,6 +62,16 @@
           <video id="video" playsinline muted autoplay></video>
           <div class="crop-guide"></div>
         </div>
+        <div class="zoom-row">
+          <span class="zoom-ico">🔍</span>
+          <input id="zoom" type="range" min="1" max="4" step="0.1" value="1.5"
+                 aria-label="Camera zoom 缩放">
+          <span id="zoom-val" class="zoom-val">1.5×</span>
+        </div>
+        <p class="zoom-hint">
+          Zoom in (slider or pinch) so the leaf fills the box<br>
+          <span class="zh">拖动滑块或双指缩放，让叶片填满方框</span>
+        </p>
         <button id="btn-capture" class="btn-primary">
           <b>Identify This Frame</b><small>识别这一帧</small>
         </button>

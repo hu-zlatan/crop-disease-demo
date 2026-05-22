@@ -77,14 +77,46 @@ main {
   border-radius: 14px;
   overflow: hidden;
   box-shadow: var(--shadow);
+  touch-action: none;
 }
-#video { width: 100%; height: 100%; object-fit: cover; display: block; }
+#video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform-origin: center;
+  transition: transform 0.08s linear;
+}
 .crop-guide {
   position: absolute;
   inset: 12%;
   border: 2px dashed rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   pointer-events: none;
+}
+.zoom-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 360px;
+}
+.zoom-ico { font-size: 18px; }
+#zoom { flex: 1; height: 30px; accent-color: var(--green); cursor: pointer; }
+.zoom-val {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--green);
+  font-variant-numeric: tabular-nums;
+  min-width: 42px;
+  text-align: right;
+}
+.zoom-hint {
+  text-align: center;
+  font-size: 12.5px;
+  color: var(--muted);
+  line-height: 1.5;
+  margin-top: -8px;
 }
 
 /* ---------- dataset sample on the start screen ---------- */

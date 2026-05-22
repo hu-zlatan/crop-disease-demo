@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#1b5e20">
+  <title>Crop Leaf Disease ID 作物叶片病害识别</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="loading" class="overlay">
+    <div class="loader">
+      <div class="spinner"></div>
+      <p id="loading-text">Initializing… 正在初始化</p>
+      <div class="progress"><div id="progress-bar"></div></div>
+      <p class="loading-hint">
+        First load downloads the model and runtime (~20 MB), then caches.<br>
+        首次加载需下载模型与推理引擎（约 20 MB），之后会缓存。
+      </p>
+    </div>
+  </div>
+
+  <header>
+    <h1>Crop Leaf Disease Identification</h1>
+    <p class="subtitle">作物叶片病害识别 · LiteCrop-OLC · on-device demo</p>
+  </header>
+
+  <main>
+    <section id="tab-camera" class="tab-panel active">
+      <div id="cam-start" class="cam-state">
+        <div class="big-icon">📷</div>
+        <p class="hint">
+          Tap to start the rear camera. Aim at a <strong>single leaf</strong>
+          with a clean background for best results.
+        </p>
+        <p class="hint hint-zh">点击启动后置摄像头。对准<strong>单片叶子</strong>、背景尽量干净，识别更准。</p>
+        <button id="btn-start-cam" class="btn-primary">
+          <b>Start Camera</b><small>启动摄像头</small>
+        </button>
+      </div>
+
+      <div id="cam-live" class="cam-state hidden">
+        <div class="video-wrap">
+          <video id="video" playsinline muted autoplay></video>
+          <div class="crop-guide"></div>
+        </div>
+        <button id="btn-capture" class="btn-primary">
+          <b>Identify This Frame</b><small>识别这一帧</small>
+        </button>
+      </div>
+
+      <div id="cam-result" class="cam-state hidden">
+        <div class="shot-wrap"><img id="shot" alt="captured image 拍摄的图像"></div>
+        <div id="result-list"></div>
+        <p id="infer-time" class="infer-time"></p>
+        <button id="btn-retake" class="btn-secondary">
+          <b>↻ Retake</b><small>重新拍照</small>
+        </button>
+      </div>
+
+      <div id="cam-error" class="cam-state hidden">
+        <div class="big-icon">⚠️</div>
+        <p id="cam-error-msg" class="error-msg"></p>
+        <button id="btn-retry-cam" class="btn-secondary">
+          <b>Retry</b><small>重试</small>
+        </button>
+      </div>
+    </section>
+
+    <section id="tab-gallery" class="tab-panel">
+      <div class="gallery-head">
+        <span class="gallery-title">Dataset samples · true labels<br><span class="zh">数据集样本 · 旁标真实分类</span></span>
+        <button id="btn-refresh" class="btn-refresh">🔄 Refresh 刷新</button>
+      </div>
+      <div class="refresh-bar"><div id="refresh-progress"></div></div>
+      <div id="gallery-grid" class="gallery-grid"></div>
+      <p class="gallery-note">
+        Auto-refreshes every 15 s · green ✓ = model prediction matches the true label<br>
+        每 15 秒自动换一批 · 绿色 ✓ = 模型预测与真实标签一致
+      </p>
+    </section>
+  </main>
+
+  <nav class="tabbar">
+    <button data-tab="camera" class="active"><b>📷 Camera</b><small>拍照识别</small></button>
+    <button data-tab="gallery"><b>🖼 Gallery</b><small>数据集展示</small></button>
+  </nav>
+
+  <script src="vendor/ort/ort.wasm.min.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

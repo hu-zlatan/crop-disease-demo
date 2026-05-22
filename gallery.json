@@ -1,0 +1,914 @@
+[
+ {
+  "file": "assets/gallery/28_2a4a2f6d63.jpg",
+  "class_id": 28,
+  "label_en": "Tomato — Bacterial spot",
+  "label_zh": "番茄 — 细菌性斑点病"
+ },
+ {
+  "file": "assets/gallery/00_81873d3129.jpg",
+  "class_id": 0,
+  "label_en": "Apple — Apple scab",
+  "label_zh": "苹果 — 黑星病"
+ },
+ {
+  "file": "assets/gallery/10_450fe4c148.jpg",
+  "class_id": 10,
+  "label_en": "Corn (maize) — Northern Leaf Blight",
+  "label_zh": "玉米 — 大斑病"
+ },
+ {
+  "file": "assets/gallery/11_b410b4070d.jpg",
+  "class_id": 11,
+  "label_en": "Grape — Black rot",
+  "label_zh": "葡萄 — 黑腐病"
+ },
+ {
+  "file": "assets/gallery/23_1c112f26d2.jpg",
+  "class_id": 23,
+  "label_en": "Raspberry — healthy",
+  "label_zh": "树莓 — 健康"
+ },
+ {
+  "file": "assets/gallery/36_c84f33c7eb.jpg",
+  "class_id": 36,
+  "label_en": "Tomato — Tomato mosaic virus",
+  "label_zh": "番茄 — 花叶病毒病"
+ },
+ {
+  "file": "assets/gallery/34_b9afe897b5.jpg",
+  "class_id": 34,
+  "label_en": "Tomato — Spider mites Two-spotted spider mite",
+  "label_zh": "番茄 — 二斑叶螨"
+ },
+ {
+  "file": "assets/gallery/29_24b1c4f34e.jpg",
+  "class_id": 29,
+  "label_en": "Tomato — Early blight",
+  "label_zh": "番茄 — 早疫病"
+ },
+ {
+  "file": "assets/gallery/14_6c13239c3a.jpg",
+  "class_id": 14,
+  "label_en": "Grape — Leaf blight (Isariopsis Leaf Spot)",
+  "label_zh": "葡萄 — 叶枯病（褐斑病）"
+ },
+ {
+  "file": "assets/gallery/17_94baafcce4.jpg",
+  "class_id": 17,
+  "label_en": "Peach — healthy",
+  "label_zh": "桃 — 健康"
+ },
+ {
+  "file": "assets/gallery/07_45dabad67b.jpg",
+  "class_id": 7,
+  "label_en": "Corn (maize) — Cercospora leaf spot Gray leaf spot",
+  "label_zh": "玉米 — 灰斑病"
+ },
+ {
+  "file": "assets/gallery/09_836470c806.jpg",
+  "class_id": 9,
+  "label_en": "Corn (maize) — healthy",
+  "label_zh": "玉米 — 健康"
+ },
+ {
+  "file": "assets/gallery/08_eb0343a7e8.jpg",
+  "class_id": 8,
+  "label_en": "Corn (maize) — Common rust",
+  "label_zh": "玉米 — 普通锈病"
+ },
+ {
+  "file": "assets/gallery/24_90e89e2289.jpg",
+  "class_id": 24,
+  "label_en": "Soybean — healthy",
+  "label_zh": "大豆 — 健康"
+ },
+ {
+  "file": "assets/gallery/07_999cfc862c.jpg",
+  "class_id": 7,
+  "label_en": "Corn (maize) — Cercospora leaf spot Gray leaf spot",
+  "label_zh": "玉米 — 灰斑病"
+ },
+ {
+  "file": "assets/gallery/30_a0c6c23cea.jpg",
+  "class_id": 30,
+  "label_en": "Tomato — healthy",
+  "label_zh": "番茄 — 健康"
+ },
+ {
+  "file": "assets/gallery/22_ac54d67fbc.jpg",
+  "class_id": 22,
+  "label_en": "Potato — Late blight",
+  "label_zh": "马铃薯 — 晚疫病"
+ },
+ {
+  "file": "assets/gallery/23_71c6dfb713.jpg",
+  "class_id": 23,
+  "label_en": "Raspberry — healthy",
+  "label_zh": "树莓 — 健康"
+ },
+ {
+  "file": "assets/gallery/37_d237d3b8ff.jpg",
+  "class_id": 37,
+  "label_en": "Tomato — Tomato Yellow Leaf Curl Virus",
+  "label_zh": "番茄 — 黄化曲叶病毒病"
+ },
+ {
+  "file": "assets/gallery/26_7bb8aab784.jpg",
+  "class_id": 26,
+  "label_en": "Strawberry — healthy",
+  "label_zh": "草莓 — 健康"
+ },
+ {
+  "file": "assets/gallery/00_6f7db1d6ff.jpg",
+  "class_id": 0,
+  "label_en": "Apple — Apple scab",
+  "label_zh": "苹果 — 黑星病"
+ },
+ {
+  "file": "assets/gallery/35_3f3a9dd880.jpg",
+  "class_id": 35,
+  "label_en": "Tomato — Target Spot",
+  "label_zh": "番茄 — 靶斑病"
+ },
+ {
+  "file": "assets/gallery/36_679c5b0aab.jpg",
+  "class_id": 36,
+  "label_en": "Tomato — Tomato mosaic virus",
+  "label_zh": "番茄 — 花叶病毒病"
+ },
+ {
+  "file": "assets/gallery/28_e5855e4196.jpg",
+  "class_id": 28,
+  "label_en": "Tomato — Bacterial spot",
+  "label_zh": "番茄 — 细菌性斑点病"
+ },
+ {
+  "file": "assets/gallery/23_b7786e37be.jpg",
+  "class_id": 23,
+  "label_en": "Raspberry — healthy",
+  "label_zh": "树莓 — 健康"
+ },
+ {
+  "file": "assets/gallery/26_6f1eb98b71.jpg",
+  "class_id": 26,
+  "label_en": "Strawberry — healthy",
+  "label_zh": "草莓 — 健康"
+ },
+ {
+  "file": "assets/gallery/14_27b54e32da.jpg",
+  "class_id": 14,
+  "label_en": "Grape — Leaf blight (Isariopsis Leaf Spot)",
+  "label_zh": "葡萄 — 叶枯病（褐斑病）"
+ },
+ {
+  "file": "assets/gallery/14_df2d0c907d.jpg",
+  "class_id": 14,
+  "label_en": "Grape — Leaf blight (Isariopsis Leaf Spot)",
+  "label_zh": "葡萄 — 叶枯病（褐斑病）"
+ },
+ {
+  "file": "assets/gallery/04_d2b10aea59.jpg",
+  "class_id": 4,
+  "label_en": "Blueberry — healthy",
+  "label_zh": "蓝莓 — 健康"
+ },
+ {
+  "file": "assets/gallery/19_4e4e13b11e.jpg",
+  "class_id": 19,
+  "label_en": "Pepper, bell — healthy",
+  "label_zh": "甜椒 — 健康"
+ },
+ {
+  "file": "assets/gallery/31_df916cb9a8.jpg",
+  "class_id": 31,
+  "label_en": "Tomato — Late blight",
+  "label_zh": "番茄 — 晚疫病"
+ },
+ {
+  "file": "assets/gallery/32_1660ad0f9c.jpg",
+  "class_id": 32,
+  "label_en": "Tomato — Leaf Mold",
+  "label_zh": "番茄 — 叶霉病"
+ },
+ {
+  "file": "assets/gallery/09_39dcdf085e.jpg",
+  "class_id": 9,
+  "label_en": "Corn (maize) — healthy",
+  "label_zh": "玉米 — 健康"
+ },
+ {
+  "file": "assets/gallery/24_5f01f32c52.jpg",
+  "class_id": 24,
+  "label_en": "Soybean — healthy",
+  "label_zh": "大豆 — 健康"
+ },
+ {
+  "file": "assets/gallery/07_762777915b.jpg",
+  "class_id": 7,
+  "label_en": "Corn (maize) — Cercospora leaf spot Gray leaf spot",
+  "label_zh": "玉米 — 灰斑病"
+ },
+ {
+  "file": "assets/gallery/22_ab95c61b89.jpg",
+  "class_id": 22,
+  "label_en": "Potato — Late blight",
+  "label_zh": "马铃薯 — 晚疫病"
+ },
+ {
+  "file": "assets/gallery/22_fc104b3079.jpg",
+  "class_id": 22,
+  "label_en": "Potato — Late blight",
+  "label_zh": "马铃薯 — 晚疫病"
+ },
+ {
+  "file": "assets/gallery/29_26aa849957.jpg",
+  "class_id": 29,
+  "label_en": "Tomato — Early blight",
+  "label_zh": "番茄 — 早疫病"
+ },
+ {
+  "file": "assets/gallery/26_3d21226a30.jpg",
+  "class_id": 26,
+  "label_en": "Strawberry — healthy",
+  "label_zh": "草莓 — 健康"
+ },
+ {
+  "file": "assets/gallery/12_ea3e3c6247.jpg",
+  "class_id": 12,
+  "label_en": "Grape — Esca (Black Measles)",
+  "label_zh": "葡萄 — 埃斯卡病（黑麻疹）"
+ },
+ {
+  "file": "assets/gallery/15_f89731073d.jpg",
+  "class_id": 15,
+  "label_en": "Orange — Haunglongbing (Citrus greening)",
+  "label_zh": "柑橘 — 黄龙病"
+ },
+ {
+  "file": "assets/gallery/21_85d2cd38d4.jpg",
+  "class_id": 21,
+  "label_en": "Potato — healthy",
+  "label_zh": "马铃薯 — 健康"
+ },
+ {
+  "file": "assets/gallery/08_71feefbda9.jpg",
+  "class_id": 8,
+  "label_en": "Corn (maize) — Common rust",
+  "label_zh": "玉米 — 普通锈病"
+ },
+ {
+  "file": "assets/gallery/18_244778773b.jpg",
+  "class_id": 18,
+  "label_en": "Pepper, bell — Bacterial spot",
+  "label_zh": "甜椒 — 细菌性斑点病"
+ },
+ {
+  "file": "assets/gallery/23_4431b70a89.jpg",
+  "class_id": 23,
+  "label_en": "Raspberry — healthy",
+  "label_zh": "树莓 — 健康"
+ },
+ {
+  "file": "assets/gallery/37_2981826fd9.jpg",
+  "class_id": 37,
+  "label_en": "Tomato — Tomato Yellow Leaf Curl Virus",
+  "label_zh": "番茄 — 黄化曲叶病毒病"
+ },
+ {
+  "file": "assets/gallery/33_87e15a9736.jpg",
+  "class_id": 33,
+  "label_en": "Tomato — Septoria leaf spot",
+  "label_zh": "番茄 — 斑枯病"
+ },
+ {
+  "file": "assets/gallery/06_6aaf564b2d.jpg",
+  "class_id": 6,
+  "label_en": "Cherry (including sour) — Powdery mildew",
+  "label_zh": "樱桃 — 白粉病"
+ },
+ {
+  "file": "assets/gallery/02_19016df16b.jpg",
+  "class_id": 2,
+  "label_en": "Apple — Cedar apple rust",
+  "label_zh": "苹果 — 雪松苹果锈病"
+ },
+ {
+  "file": "assets/gallery/01_e0358bfc21.jpg",
+  "class_id": 1,
+  "label_en": "Apple — Black rot",
+  "label_zh": "苹果 — 黑腐病"
+ },
+ {
+  "file": "assets/gallery/05_16c5c34e62.jpg",
+  "class_id": 5,
+  "label_en": "Cherry (including sour) — healthy",
+  "label_zh": "樱桃 — 健康"
+ },
+ {
+  "file": "assets/gallery/06_b42fbfca90.jpg",
+  "class_id": 6,
+  "label_en": "Cherry (including sour) — Powdery mildew",
+  "label_zh": "樱桃 — 白粉病"
+ },
+ {
+  "file": "assets/gallery/05_6adb9e43b7.jpg",
+  "class_id": 5,
+  "label_en": "Cherry (including sour) — healthy",
+  "label_zh": "樱桃 — 健康"
+ },
+ {
+  "file": "assets/gallery/12_127a215726.jpg",
+  "class_id": 12,
+  "label_en": "Grape — Esca (Black Measles)",
+  "label_zh": "葡萄 — 埃斯卡病（黑麻疹）"
+ },
+ {
+  "file": "assets/gallery/27_1d977edf87.jpg",
+  "class_id": 27,
+  "label_en": "Strawberry — Leaf scorch",
+  "label_zh": "草莓 — 叶焦病"
+ },
+ {
+  "file": "assets/gallery/29_7f1f5e76c5.jpg",
+  "class_id": 29,
+  "label_en": "Tomato — Early blight",
+  "label_zh": "番茄 — 早疫病"
+ },
+ {
+  "file": "assets/gallery/10_4eee2c8f43.jpg",
+  "class_id": 10,
+  "label_en": "Corn (maize) — Northern Leaf Blight",
+  "label_zh": "玉米 — 大斑病"
+ },
+ {
+  "file": "assets/gallery/16_f192e3f40b.jpg",
+  "class_id": 16,
+  "label_en": "Peach — Bacterial spot",
+  "label_zh": "桃 — 细菌性斑点病"
+ },
+ {
+  "file": "assets/gallery/15_9247474dd7.jpg",
+  "class_id": 15,
+  "label_en": "Orange — Haunglongbing (Citrus greening)",
+  "label_zh": "柑橘 — 黄龙病"
+ },
+ {
+  "file": "assets/gallery/17_a4e991e511.jpg",
+  "class_id": 17,
+  "label_en": "Peach — healthy",
+  "label_zh": "桃 — 健康"
+ },
+ {
+  "file": "assets/gallery/01_5206b209ec.jpg",
+  "class_id": 1,
+  "label_en": "Apple — Black rot",
+  "label_zh": "苹果 — 黑腐病"
+ },
+ {
+  "file": "assets/gallery/08_02a1281970.jpg",
+  "class_id": 8,
+  "label_en": "Corn (maize) — Common rust",
+  "label_zh": "玉米 — 普通锈病"
+ },
+ {
+  "file": "assets/gallery/25_fb811ca07c.jpg",
+  "class_id": 25,
+  "label_en": "Squash — Powdery mildew",
+  "label_zh": "南瓜 — 白粉病"
+ },
+ {
+  "file": "assets/gallery/25_a836436ca6.jpg",
+  "class_id": 25,
+  "label_en": "Squash — Powdery mildew",
+  "label_zh": "南瓜 — 白粉病"
+ },
+ {
+  "file": "assets/gallery/22_7f750fe517.jpg",
+  "class_id": 22,
+  "label_en": "Potato — Late blight",
+  "label_zh": "马铃薯 — 晚疫病"
+ },
+ {
+  "file": "assets/gallery/06_bc39b809ec.jpg",
+  "class_id": 6,
+  "label_en": "Cherry (including sour) — Powdery mildew",
+  "label_zh": "樱桃 — 白粉病"
+ },
+ {
+  "file": "assets/gallery/35_db08515dc3.jpg",
+  "class_id": 35,
+  "label_en": "Tomato — Target Spot",
+  "label_zh": "番茄 — 靶斑病"
+ },
+ {
+  "file": "assets/gallery/13_e8f30f954e.jpg",
+  "class_id": 13,
+  "label_en": "Grape — healthy",
+  "label_zh": "葡萄 — 健康"
+ },
+ {
+  "file": "assets/gallery/33_3eaea88840.jpg",
+  "class_id": 33,
+  "label_en": "Tomato — Septoria leaf spot",
+  "label_zh": "番茄 — 斑枯病"
+ },
+ {
+  "file": "assets/gallery/02_cc586babc7.jpg",
+  "class_id": 2,
+  "label_en": "Apple — Cedar apple rust",
+  "label_zh": "苹果 — 雪松苹果锈病"
+ },
+ {
+  "file": "assets/gallery/20_829067e323.jpg",
+  "class_id": 20,
+  "label_en": "Potato — Early blight",
+  "label_zh": "马铃薯 — 早疫病"
+ },
+ {
+  "file": "assets/gallery/20_272c65553d.jpg",
+  "class_id": 20,
+  "label_en": "Potato — Early blight",
+  "label_zh": "马铃薯 — 早疫病"
+ },
+ {
+  "file": "assets/gallery/08_a9821317f7.jpg",
+  "class_id": 8,
+  "label_en": "Corn (maize) — Common rust",
+  "label_zh": "玉米 — 普通锈病"
+ },
+ {
+  "file": "assets/gallery/04_5241109659.jpg",
+  "class_id": 4,
+  "label_en": "Blueberry — healthy",
+  "label_zh": "蓝莓 — 健康"
+ },
+ {
+  "file": "assets/gallery/20_87f0c38533.jpg",
+  "class_id": 20,
+  "label_en": "Potato — Early blight",
+  "label_zh": "马铃薯 — 早疫病"
+ },
+ {
+  "file": "assets/gallery/27_2baa0111df.jpg",
+  "class_id": 27,
+  "label_en": "Strawberry — Leaf scorch",
+  "label_zh": "草莓 — 叶焦病"
+ },
+ {
+  "file": "assets/gallery/18_83a8253308.jpg",
+  "class_id": 18,
+  "label_en": "Pepper, bell — Bacterial spot",
+  "label_zh": "甜椒 — 细菌性斑点病"
+ },
+ {
+  "file": "assets/gallery/31_8bed625e2d.jpg",
+  "class_id": 31,
+  "label_en": "Tomato — Late blight",
+  "label_zh": "番茄 — 晚疫病"
+ },
+ {
+  "file": "assets/gallery/11_bf3f1434a7.jpg",
+  "class_id": 11,
+  "label_en": "Grape — Black rot",
+  "label_zh": "葡萄 — 黑腐病"
+ },
+ {
+  "file": "assets/gallery/30_de302ede51.jpg",
+  "class_id": 30,
+  "label_en": "Tomato — healthy",
+  "label_zh": "番茄 — 健康"
+ },
+ {
+  "file": "assets/gallery/24_14723fc007.jpg",
+  "class_id": 24,
+  "label_en": "Soybean — healthy",
+  "label_zh": "大豆 — 健康"
+ },
+ {
+  "file": "assets/gallery/34_e6961ad747.jpg",
+  "class_id": 34,
+  "label_en": "Tomato — Spider mites Two-spotted spider mite",
+  "label_zh": "番茄 — 二斑叶螨"
+ },
+ {
+  "file": "assets/gallery/13_91d6fe5b44.jpg",
+  "class_id": 13,
+  "label_en": "Grape — healthy",
+  "label_zh": "葡萄 — 健康"
+ },
+ {
+  "file": "assets/gallery/32_acabc05ca0.jpg",
+  "class_id": 32,
+  "label_en": "Tomato — Leaf Mold",
+  "label_zh": "番茄 — 叶霉病"
+ },
+ {
+  "file": "assets/gallery/01_6c55edf574.jpg",
+  "class_id": 1,
+  "label_en": "Apple — Black rot",
+  "label_zh": "苹果 — 黑腐病"
+ },
+ {
+  "file": "assets/gallery/11_8f710e509d.jpg",
+  "class_id": 11,
+  "label_en": "Grape — Black rot",
+  "label_zh": "葡萄 — 黑腐病"
+ },
+ {
+  "file": "assets/gallery/28_6a92bfa1ea.jpg",
+  "class_id": 28,
+  "label_en": "Tomato — Bacterial spot",
+  "label_zh": "番茄 — 细菌性斑点病"
+ },
+ {
+  "file": "assets/gallery/31_e478997431.jpg",
+  "class_id": 31,
+  "label_en": "Tomato — Late blight",
+  "label_zh": "番茄 — 晚疫病"
+ },
+ {
+  "file": "assets/gallery/35_b0e6153aca.jpg",
+  "class_id": 35,
+  "label_en": "Tomato — Target Spot",
+  "label_zh": "番茄 — 靶斑病"
+ },
+ {
+  "file": "assets/gallery/20_69b9dfe2fe.jpg",
+  "class_id": 20,
+  "label_en": "Potato — Early blight",
+  "label_zh": "马铃薯 — 早疫病"
+ },
+ {
+  "file": "assets/gallery/21_9c1f060c32.jpg",
+  "class_id": 21,
+  "label_en": "Potato — healthy",
+  "label_zh": "马铃薯 — 健康"
+ },
+ {
+  "file": "assets/gallery/00_ef4bf282ee.jpg",
+  "class_id": 0,
+  "label_en": "Apple — Apple scab",
+  "label_zh": "苹果 — 黑星病"
+ },
+ {
+  "file": "assets/gallery/17_751eb95189.jpg",
+  "class_id": 17,
+  "label_en": "Peach — healthy",
+  "label_zh": "桃 — 健康"
+ },
+ {
+  "file": "assets/gallery/27_880c6d569a.jpg",
+  "class_id": 27,
+  "label_en": "Strawberry — Leaf scorch",
+  "label_zh": "草莓 — 叶焦病"
+ },
+ {
+  "file": "assets/gallery/34_34dcbc591f.jpg",
+  "class_id": 34,
+  "label_en": "Tomato — Spider mites Two-spotted spider mite",
+  "label_zh": "番茄 — 二斑叶螨"
+ },
+ {
+  "file": "assets/gallery/21_6bfd63b31f.jpg",
+  "class_id": 21,
+  "label_en": "Potato — healthy",
+  "label_zh": "马铃薯 — 健康"
+ },
+ {
+  "file": "assets/gallery/15_ef2481b476.jpg",
+  "class_id": 15,
+  "label_en": "Orange — Haunglongbing (Citrus greening)",
+  "label_zh": "柑橘 — 黄龙病"
+ },
+ {
+  "file": "assets/gallery/02_50669ee3cc.jpg",
+  "class_id": 2,
+  "label_en": "Apple — Cedar apple rust",
+  "label_zh": "苹果 — 雪松苹果锈病"
+ },
+ {
+  "file": "assets/gallery/03_5196c2cc81.jpg",
+  "class_id": 3,
+  "label_en": "Apple — healthy",
+  "label_zh": "苹果 — 健康"
+ },
+ {
+  "file": "assets/gallery/24_43de45ac21.jpg",
+  "class_id": 24,
+  "label_en": "Soybean — healthy",
+  "label_zh": "大豆 — 健康"
+ },
+ {
+  "file": "assets/gallery/34_6718310d1c.jpg",
+  "class_id": 34,
+  "label_en": "Tomato — Spider mites Two-spotted spider mite",
+  "label_zh": "番茄 — 二斑叶螨"
+ },
+ {
+  "file": "assets/gallery/17_3615fcde2e.jpg",
+  "class_id": 17,
+  "label_en": "Peach — healthy",
+  "label_zh": "桃 — 健康"
+ },
+ {
+  "file": "assets/gallery/25_8722b8aa3b.jpg",
+  "class_id": 25,
+  "label_en": "Squash — Powdery mildew",
+  "label_zh": "南瓜 — 白粉病"
+ },
+ {
+  "file": "assets/gallery/35_d3c5eeff11.jpg",
+  "class_id": 35,
+  "label_en": "Tomato — Target Spot",
+  "label_zh": "番茄 — 靶斑病"
+ },
+ {
+  "file": "assets/gallery/31_1fc437b372.jpg",
+  "class_id": 31,
+  "label_en": "Tomato — Late blight",
+  "label_zh": "番茄 — 晚疫病"
+ },
+ {
+  "file": "assets/gallery/19_7e04bb70fb.jpg",
+  "class_id": 19,
+  "label_en": "Pepper, bell — healthy",
+  "label_zh": "甜椒 — 健康"
+ },
+ {
+  "file": "assets/gallery/15_84006a75f1.jpg",
+  "class_id": 15,
+  "label_en": "Orange — Haunglongbing (Citrus greening)",
+  "label_zh": "柑橘 — 黄龙病"
+ },
+ {
+  "file": "assets/gallery/05_9180c99c19.jpg",
+  "class_id": 5,
+  "label_en": "Cherry (including sour) — healthy",
+  "label_zh": "樱桃 — 健康"
+ },
+ {
+  "file": "assets/gallery/03_e2227288f5.jpg",
+  "class_id": 3,
+  "label_en": "Apple — healthy",
+  "label_zh": "苹果 — 健康"
+ },
+ {
+  "file": "assets/gallery/19_7230f2feb4.jpg",
+  "class_id": 19,
+  "label_en": "Pepper, bell — healthy",
+  "label_zh": "甜椒 — 健康"
+ },
+ {
+  "file": "assets/gallery/04_44dccdb9b9.jpg",
+  "class_id": 4,
+  "label_en": "Blueberry — healthy",
+  "label_zh": "蓝莓 — 健康"
+ },
+ {
+  "file": "assets/gallery/33_8f95fe846c.jpg",
+  "class_id": 33,
+  "label_en": "Tomato — Septoria leaf spot",
+  "label_zh": "番茄 — 斑枯病"
+ },
+ {
+  "file": "assets/gallery/13_13a670dbb5.jpg",
+  "class_id": 13,
+  "label_en": "Grape — healthy",
+  "label_zh": "葡萄 — 健康"
+ },
+ {
+  "file": "assets/gallery/32_ab1b7921ae.jpg",
+  "class_id": 32,
+  "label_en": "Tomato — Leaf Mold",
+  "label_zh": "番茄 — 叶霉病"
+ },
+ {
+  "file": "assets/gallery/16_99c8913c28.jpg",
+  "class_id": 16,
+  "label_en": "Peach — Bacterial spot",
+  "label_zh": "桃 — 细菌性斑点病"
+ },
+ {
+  "file": "assets/gallery/27_3b7aba26eb.jpg",
+  "class_id": 27,
+  "label_en": "Strawberry — Leaf scorch",
+  "label_zh": "草莓 — 叶焦病"
+ },
+ {
+  "file": "assets/gallery/36_aa69759f7c.jpg",
+  "class_id": 36,
+  "label_en": "Tomato — Tomato mosaic virus",
+  "label_zh": "番茄 — 花叶病毒病"
+ },
+ {
+  "file": "assets/gallery/06_77e079693d.jpg",
+  "class_id": 6,
+  "label_en": "Cherry (including sour) — Powdery mildew",
+  "label_zh": "樱桃 — 白粉病"
+ },
+ {
+  "file": "assets/gallery/00_1d9efc78ab.jpg",
+  "class_id": 0,
+  "label_en": "Apple — Apple scab",
+  "label_zh": "苹果 — 黑星病"
+ },
+ {
+  "file": "assets/gallery/03_c8649377de.jpg",
+  "class_id": 3,
+  "label_en": "Apple — healthy",
+  "label_zh": "苹果 — 健康"
+ },
+ {
+  "file": "assets/gallery/04_2eb2cd78a2.jpg",
+  "class_id": 4,
+  "label_en": "Blueberry — healthy",
+  "label_zh": "蓝莓 — 健康"
+ },
+ {
+  "file": "assets/gallery/12_279fe3c947.jpg",
+  "class_id": 12,
+  "label_en": "Grape — Esca (Black Measles)",
+  "label_zh": "葡萄 — 埃斯卡病（黑麻疹）"
+ },
+ {
+  "file": "assets/gallery/12_ccf0e303b2.jpg",
+  "class_id": 12,
+  "label_en": "Grape — Esca (Black Measles)",
+  "label_zh": "葡萄 — 埃斯卡病（黑麻疹）"
+ },
+ {
+  "file": "assets/gallery/07_428256bf09.jpg",
+  "class_id": 7,
+  "label_en": "Corn (maize) — Cercospora leaf spot Gray leaf spot",
+  "label_zh": "玉米 — 灰斑病"
+ },
+ {
+  "file": "assets/gallery/02_b0abcdfeee.jpg",
+  "class_id": 2,
+  "label_en": "Apple — Cedar apple rust",
+  "label_zh": "苹果 — 雪松苹果锈病"
+ },
+ {
+  "file": "assets/gallery/18_f883c2c4b0.jpg",
+  "class_id": 18,
+  "label_en": "Pepper, bell — Bacterial spot",
+  "label_zh": "甜椒 — 细菌性斑点病"
+ },
+ {
+  "file": "assets/gallery/19_9a10be905e.jpg",
+  "class_id": 19,
+  "label_en": "Pepper, bell — healthy",
+  "label_zh": "甜椒 — 健康"
+ },
+ {
+  "file": "assets/gallery/29_25d05b61b6.jpg",
+  "class_id": 29,
+  "label_en": "Tomato — Early blight",
+  "label_zh": "番茄 — 早疫病"
+ },
+ {
+  "file": "assets/gallery/21_617d3f89b8.jpg",
+  "class_id": 21,
+  "label_en": "Potato — healthy",
+  "label_zh": "马铃薯 — 健康"
+ },
+ {
+  "file": "assets/gallery/37_c53b541961.jpg",
+  "class_id": 37,
+  "label_en": "Tomato — Tomato Yellow Leaf Curl Virus",
+  "label_zh": "番茄 — 黄化曲叶病毒病"
+ },
+ {
+  "file": "assets/gallery/16_4169df66a6.jpg",
+  "class_id": 16,
+  "label_en": "Peach — Bacterial spot",
+  "label_zh": "桃 — 细菌性斑点病"
+ },
+ {
+  "file": "assets/gallery/32_f5e7d79ebc.jpg",
+  "class_id": 32,
+  "label_en": "Tomato — Leaf Mold",
+  "label_zh": "番茄 — 叶霉病"
+ },
+ {
+  "file": "assets/gallery/37_8501ed3828.jpg",
+  "class_id": 37,
+  "label_en": "Tomato — Tomato Yellow Leaf Curl Virus",
+  "label_zh": "番茄 — 黄化曲叶病毒病"
+ },
+ {
+  "file": "assets/gallery/09_cd121f6bfa.jpg",
+  "class_id": 9,
+  "label_en": "Corn (maize) — healthy",
+  "label_zh": "玉米 — 健康"
+ },
+ {
+  "file": "assets/gallery/26_7854430ba1.jpg",
+  "class_id": 26,
+  "label_en": "Strawberry — healthy",
+  "label_zh": "草莓 — 健康"
+ },
+ {
+  "file": "assets/gallery/14_f44b2dfdaa.jpg",
+  "class_id": 14,
+  "label_en": "Grape — Leaf blight (Isariopsis Leaf Spot)",
+  "label_zh": "葡萄 — 叶枯病（褐斑病）"
+ },
+ {
+  "file": "assets/gallery/10_fe4caa7f21.jpg",
+  "class_id": 10,
+  "label_en": "Corn (maize) — Northern Leaf Blight",
+  "label_zh": "玉米 — 大斑病"
+ },
+ {
+  "file": "assets/gallery/30_19e0e6b12d.jpg",
+  "class_id": 30,
+  "label_en": "Tomato — healthy",
+  "label_zh": "番茄 — 健康"
+ },
+ {
+  "file": "assets/gallery/30_939f80a3ce.jpg",
+  "class_id": 30,
+  "label_en": "Tomato — healthy",
+  "label_zh": "番茄 — 健康"
+ },
+ {
+  "file": "assets/gallery/28_aa73ea4a06.jpg",
+  "class_id": 28,
+  "label_en": "Tomato — Bacterial spot",
+  "label_zh": "番茄 — 细菌性斑点病"
+ },
+ {
+  "file": "assets/gallery/13_032fdcb7af.jpg",
+  "class_id": 13,
+  "label_en": "Grape — healthy",
+  "label_zh": "葡萄 — 健康"
+ },
+ {
+  "file": "assets/gallery/05_cf89081b09.jpg",
+  "class_id": 5,
+  "label_en": "Cherry (including sour) — healthy",
+  "label_zh": "樱桃 — 健康"
+ },
+ {
+  "file": "assets/gallery/18_571189808e.jpg",
+  "class_id": 18,
+  "label_en": "Pepper, bell — Bacterial spot",
+  "label_zh": "甜椒 — 细菌性斑点病"
+ },
+ {
+  "file": "assets/gallery/01_0fb78f4856.jpg",
+  "class_id": 1,
+  "label_en": "Apple — Black rot",
+  "label_zh": "苹果 — 黑腐病"
+ },
+ {
+  "file": "assets/gallery/25_5ac94f7ec6.jpg",
+  "class_id": 25,
+  "label_en": "Squash — Powdery mildew",
+  "label_zh": "南瓜 — 白粉病"
+ },
+ {
+  "file": "assets/gallery/33_91412996b7.jpg",
+  "class_id": 33,
+  "label_en": "Tomato — Septoria leaf spot",
+  "label_zh": "番茄 — 斑枯病"
+ },
+ {
+  "file": "assets/gallery/11_c8b179ad95.jpg",
+  "class_id": 11,
+  "label_en": "Grape — Black rot",
+  "label_zh": "葡萄 — 黑腐病"
+ },
+ {
+  "file": "assets/gallery/16_728c6ed9fd.jpg",
+  "class_id": 16,
+  "label_en": "Peach — Bacterial spot",
+  "label_zh": "桃 — 细菌性斑点病"
+ },
+ {
+  "file": "assets/gallery/10_914928e257.jpg",
+  "class_id": 10,
+  "label_en": "Corn (maize) — Northern Leaf Blight",
+  "label_zh": "玉米 — 大斑病"
+ },
+ {
+  "file": "assets/gallery/03_4ce09c1fe5.jpg",
+  "class_id": 3,
+  "label_en": "Apple — healthy",
+  "label_zh": "苹果 — 健康"
+ },
+ {
+  "file": "assets/gallery/09_d051f30833.jpg",
+  "class_id": 9,
+  "label_en": "Corn (maize) — healthy",
+  "label_zh": "玉米 — 健康"
+ },
+ {
+  "file": "assets/gallery/36_0050157d34.jpg",
+  "class_id": 36,
+  "label_en": "Tomato — Tomato mosaic virus",
+  "label_zh": "番茄 — 花叶病毒病"
+ }
+]

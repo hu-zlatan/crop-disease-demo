@@ -1,0 +1,13 @@
+{
+  "rule": "reject if maxProb < minProb OR energy > maxEnergy",
+  "minProb": 0.7871,
+  "maxEnergy": -2.3986,
+  "keepFrac": 0.95,
+  "indist": {
+    "n": 756,
+    "maxProb_p1": 0.545,
+    "maxProb_median": 0.9253,
+    "energy_median": -3.721,
+    "energy_p99": -1.3662
+  }
+}

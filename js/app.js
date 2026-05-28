@@ -236,8 +236,10 @@ function renderResult(res) {
   list.innerHTML = res.top
     .map((r, i) => {
       const pct = (r.prob * 100).toFixed(1);
+      const tier =
+        r.prob >= 0.7 ? "tier-hi" : r.prob >= 0.4 ? "tier-mid" : "tier-lo";
       return (
-        '<div class="result-row' + (i === 0 ? " top" : "") + '">' +
+        '<div class="result-row ' + (i === 0 ? "top " : "") + tier + '">' +
         '<div class="result-name">' + esc(r.cls.label_en) +
         '<span class="sub">' + esc(r.cls.label_zh) + "</span></div>" +
         '<div class="result-bar"><div class="result-fill" style="width:' + pct + '%"></div></div>' +

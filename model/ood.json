@@ -1,8 +1,8 @@
 {
   "rule": "reject if maxProb < minProb OR energy > maxEnergy",
-  "minProb": 0.7871,
-  "maxEnergy": -2.3986,
-  "keepFrac": 0.95,
+  "minProb": 0.4,
+  "maxEnergy": 1000000000,
+  "note": "Manual override: minProb = 0.40 (40% floor); maxEnergy effectively disabled. Calibration baseline at keep-frac 0.95 was minProb=0.7871, maxEnergy=-2.3986.",
   "indist": {
     "n": 756,
     "maxProb_p1": 0.545,
